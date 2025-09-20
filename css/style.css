@@ -671,3 +671,243 @@ ul {
 .form-icon {
     fill: #FFFFFF;
 }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%);
+    
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #FCFCFC;
+}
+
+.modal-icon {
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+
+}
+
+.modal-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+
+    margin-bottom: 16px;
+}
+
+.modal-form {
+    position: absolute;
+    top: 112px;
+    left: 24px;
+}
+
+.modal-form-name {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.modal-form-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-form-input {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding: 11px 38px;
+
+    outline: transparent;
+}
+
+.modal-form-icon-person {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+
+    width: 18px;
+    height: 18px;
+}
+
+.modal-form-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-form-input:focus + .modal-form-icon-person {
+    fill: #4D5AE5;
+}
+
+.modal-form-phone {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.modal-form-icon-phone {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    
+    width: 18px;
+    height: 18px;
+}
+
+.modal-form-input:focus+.modal-form-icon-phone {
+    fill: #4D5AE5;
+}
+
+.modal-form-email {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.modal-form-icon-email {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    
+    width: 18px;
+    height: 18px;
+}
+
+.modal-form-input:focus+.modal-form-icon-email {
+    fill: #4D5AE5;
+}
+
+.modal-form-comment {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.modal-form-comment::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+}
+
+.box-accept {
+    margin-bottom: 24px;
+}
+
+.modal-form-accept {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+
+    align-items: center;
+}
+
+.accept {
+    border-radius: 2px;
+    border: 1px solid #2E2F42;
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    outline: transparent;   
+    fill: transparent;
+}
+
+.accept-icon {
+}
+
+.modal-input-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal-form-link {
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4D5AE5;
+}
+
+.modal-form-btn {
+    display: block;
+    margin: auto;
+    min-width: 169px;
+    height: 56px;
+    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+    
+    background-color: #4D5AE5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+    
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    background-color: #404BBF;
+}
