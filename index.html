@@ -496,5 +496,68 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="info_form" autocomplete="off">
+          <div class="modal-form-name">
+            <label class="modal-form-label" for="user_name">Name</label>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+            />
+            <svg class="modal-form-icon-person" width=18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-form-phone">
+            <label class="modal-form-label" for="phone">Phone</label>
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="phone"
+              id="phone"
+            />
+            <svg class="modal-form-icon-phone" width=18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-form-email">
+            <label class="modal-form-label" for="email">Email</label>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <svg class="modal-form-icon-email" width=18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="modal-form-comment">
+          <label class="modal-form-label" for="comment">Comment</label>
+            <textarea class="modal-form-comment" name="comment" rows="6" placeholder="Text input"></textarea>
+            </div>
+            <div class="box-accept">
+            <label class="modal-form-accept">
+              <span class="accept">
+                <svg class="accept-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              <input class="modal-input-hidden" type="checkbox" name="accept" value="I accept the terms and conditions of the Privacy Policy" /></span>
+              I accept the terms and conditions of the <a class="modal-form-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+            <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
