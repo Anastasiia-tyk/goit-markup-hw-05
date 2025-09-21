@@ -753,10 +753,12 @@ ul {
 
 .icon-close:hover {
     background-color: #404BBF;
+    border: none;
 }
 
 .icon-close:focus{
     background-color: #404BBF;
+    border: none;
 }
 
 
