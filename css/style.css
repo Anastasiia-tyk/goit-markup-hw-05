@@ -894,16 +894,16 @@ ul {
     width: 16px;
     height: 16px;
     margin-right: 8px;
-    outline: transparent;   
+    outline: transparent;
+    fill: transparent;   
 }
 
 .accept-icon {
-    fill: transparent;
 }
 
-.modal-form-label:checked + .modal-form-accept > accept {
-    fill: #FFFFFF;
+.modal-input:checked + .modal-form-accept > .accept {
     background-color: #404BBF;
+    fill: #FFFFFF;
     border: none;
 }
 
