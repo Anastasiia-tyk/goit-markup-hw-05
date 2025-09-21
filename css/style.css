@@ -601,6 +601,7 @@ ul {
 
 .form {
     display: flex;
+    gap: 24px;
 }
 
 .footer-form-text {
@@ -617,20 +618,10 @@ ul {
     gap: 24px;
 }
 
-.input-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 24px;
-    margin-top: 16px;
-}
-
 .input-form {
     border: 1px solid #FFFFFF;
-    border-radius: 4px;
     width: 264px;
     height: 40px;
-    padding: 8px;
     background-color: transparent;
     
     font-size: 12px;
@@ -654,7 +645,6 @@ ul {
     gap: 16px;
 
     border-radius: 4px;
-    padding: 8px 24px;
     min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
@@ -716,6 +706,7 @@ ul {
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
+    padding: 72px 24px 24px 24px;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
@@ -760,18 +751,15 @@ ul {
     border: none;
 }
 
-.modal-icon:hover,
+.modal-icon:hover {
+    fill: #FFFFFF;
+}
+
 .modal-icon:focus {
     fill: #FFFFFF;
 }
 
-.icon-close:hover > .modal-icon {
-    fill: #FFFFFF;
-}
-
 .modal-text {
-    padding: 72px 24px 24px 24px;
-
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -907,6 +895,10 @@ ul {
     fill: #4D5AE5;
 }
 
+.box-modal-form-comment {
+    margin-bottom: 16px;
+}
+
 .modal-form-comment {
     display: flex;
     flex-direction: column;
@@ -921,7 +913,6 @@ ul {
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
-    padding: 8px 16px;
     outline: transparent;
     resize: none;
 
@@ -935,8 +926,6 @@ ul {
 .modal-form-comment::placeholder {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    
-    padding: 8px 16px;
 }
 
 .box-accept {
@@ -980,7 +969,7 @@ ul {
 }
 
 .modal-form-link {
-    line-height: 133%;
+    line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4D5AE5;
@@ -988,14 +977,14 @@ ul {
 
 .modal-form-btn {
     display: block;
-    margin: auto;
     min-width: 169px;
+    margin: auto;
     height: 56px;
     
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #FFFFFF;
