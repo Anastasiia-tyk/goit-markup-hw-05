@@ -698,15 +698,40 @@ ul {
     background: #FCFCFC;
 }
 
-.modal-icon {
+.icon-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-icon {
+    fill: #2E2F42;
+}
 
+.icon-close:hover {
+    background-color: #404BBF;
+    border: none;
+}
+
+.icon-close:hover > .modal-icon {
+    fill: #FFFFFF;
 }
 
 .modal-text {
+    position: absolute;
+    top: 72px;
+    left: 36px;
+
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -859,23 +884,16 @@ ul {
     height: 16px;
     margin-right: 8px;
     outline: transparent;   
-    fill: transparent;
 }
 
 .accept-icon {
+    fill: transparent;
 }
 
-.modal-input-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.modal-form-label:checked + .modal-form-accept > accept {
+    fill: #FFFFFF;
+    background-color: #404BBF;
+    border: none;
 }
 
 .modal-form-link {
