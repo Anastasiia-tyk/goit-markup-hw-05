@@ -498,11 +498,13 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+  <div class="backdrop">
       <div class="modal">
-        <svg class="modal-icon" width="8" height="8">
+        <button class="icon-close" type="button">
+          <svg class="modal-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
+        </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="info_form" autocomplete="off">
           <div class="modal-form-name">
@@ -543,15 +545,16 @@
           </div>
           <div class="modal-form-comment">
           <label class="modal-form-label" for="comment">Comment</label>
-            <textarea class="modal-form-comment" name="comment" rows="6" placeholder="Text input"></textarea>
+            <textarea class="modal-form-comment" name="comment" placeholder="Text input"></textarea>
             </div>
             <div class="box-accept">
+            <input class="modal-input visually-hidden" type="checkbox" name="accept" value="I accept the terms and conditions of the Privacy Policy" />
             <label class="modal-form-accept">
               <span class="accept">
                 <svg class="accept-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
-              <input class="modal-input-hidden" type="checkbox" name="accept" value="I accept the terms and conditions of the Privacy Policy" /></span>
+              </span>
               I accept the terms and conditions of the <a class="modal-form-link" href="">Privacy Policy</a>
             </label>
           </div>
